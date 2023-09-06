@@ -1,0 +1,1 @@
+C:\munka\egyetem\eva\Snake3\Snake\Snake.MAUI\Snake.MAUI.csproj;x64

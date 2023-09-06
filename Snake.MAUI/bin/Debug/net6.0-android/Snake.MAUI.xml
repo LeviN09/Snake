@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Snake.MAUI</name>
+    </assembly>
+    <members>
+        <member name="T:Snake.MAUI.ViewModel.DelegateCommand">
+            <summary>
+            Általános parancs típusa.
+            </summary>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.DelegateCommand.#ctor(System.Action{System.Object})">
+            <summary>
+            Parancs létrehozása.
+            </summary>
+            <param name="execute">Végrehajtandó tevékenység.</param>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.DelegateCommand.#ctor(System.Func{System.Object,System.Boolean},System.Action{System.Object})">
+            <summary>
+            Parancs létrehozása.
+            </summary>
+            <param name="canExecute">Végrehajthatóság feltétele.</param>
+            <param name="execute">Végrehajtandó tevékenység.</param>
+        </member>
+        <member name="E:Snake.MAUI.ViewModel.DelegateCommand.CanExecuteChanged">
+            <summary>
+            Végrehajthatóság változásának eseménye.
+            </summary>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.DelegateCommand.CanExecute(System.Object)">
+            <summary>
+            Végrehajthatóság ellenőrzése
+            </summary>
+            <param name="parameter">A tevékenység paramétere.</param>
+            <returns>Igaz, ha a tevékenység végrehajtható.</returns>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.DelegateCommand.Execute(System.Object)">
+            <summary>
+            Tevékenység végrehajtása.
+            </summary>
+            <param name="parameter">A tevékenység paramétere.</param>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.DelegateCommand.RaiseCanExecuteChanged">
+            <summary>
+            Végrehajthatóság változásának eseménykiváltása.
+            </summary>
+        </member>
+        <member name="T:Snake.MAUI.ViewModel.ViewModelBase">
+            <summary>
+            Nézetmodell ősosztály típusa.
+            </summary>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.ViewModelBase.#ctor">
+            <summary>
+            Nézetmodell ősosztály példányosítása.
+            </summary>
+        </member>
+        <member name="E:Snake.MAUI.ViewModel.ViewModelBase.PropertyChanged">
+            <summary>
+            Tulajdonság változásának eseménye.
+            </summary>
+        </member>
+        <member name="M:Snake.MAUI.ViewModel.ViewModelBase.OnPropertyChanged(System.String)">
+            <summary>
+            Tulajdonság változása ellenőrzéssel.
+            </summary>
+            <param name="propertyName">Tulajdonság neve.</param>
+        </member>
+    </members>
+</doc>
